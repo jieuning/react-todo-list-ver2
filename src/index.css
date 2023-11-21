@@ -1,6 +1,12 @@
 :root {
+  /* 브라우저가 처음에 있는 폰트부터 하나씩 시도 -> 사용 가능한 첫번째 폰트를 사용한다. */
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  /*
+  line-height 1.5는 상대 값으로 되어있다. 
+  이 속성이 적용된 element의 font-size에 대한 배수를 곱한것 
+  ex) font-size: 16px -> line-height의 절댓값: 16px*1.5px
+  */
+  line-height: 1.5; 
   font-weight: 400;
 
   color-scheme: light dark;
